@@ -1,0 +1,19 @@
+{
+  "name": "rand0me.github.io",
+  "version": "1.0.0",
+  "description": "The rand0me.github.io Github Pages Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rand0me/rand0me.github.io.git"
+  },
+  "author": "rand0me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rand0me/rand0me.github.io/issues"
+  },
+  "homepage": "https://github.com/rand0me/rand0me.github.io#readme"
+}
