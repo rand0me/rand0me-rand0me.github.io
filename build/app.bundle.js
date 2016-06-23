@@ -44,25 +44,39 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	module.exports = __webpack_require__(1);
 
-	__webpack_require__(1);
-
-	var body = document.querySelector('body');
-
-	body.html = '<h1>Test</h1>';
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	__webpack_require__(2);
+
+	var _motd = __webpack_require__(6);
+
+	var _motd2 = _interopRequireDefault(_motd);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var body = document.querySelector('body');
+
+	(0, _motd2.default)();
+	body.html = '<h1>Test</h1>';
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -79,10 +93,10 @@
 	}
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
@@ -93,7 +107,7 @@
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -149,7 +163,7 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -399,6 +413,22 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = function () {
+	  console.log("\n          _____                    _____                    _____                    _____                    _____                    _____          \n         /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\         \n        /::\\    \\                /::\\    \\                /::\\____\\                /::\\    \\                /::\\____\\                /::\\    \\        \n       /::::\\    \\              /::::\\    \\              /::::|   |               /::::\\    \\              /::::|   |               /::::\\    \\       \n      /::::::\\    \\            /::::::\\    \\            /:::::|   |              /::::::\\    \\            /:::::|   |              /::::::\\    \\      \n     /:::/\\:::\\    \\          /:::/\\:::\\    \\          /::::::|   |             /:::/\\:::\\    \\          /::::::|   |             /:::/\\:::\\    \\     \n    /:::/__\\:::\\    \\        /:::/__\\:::\\    \\        /:::/|::|   |            /:::/  \\:::\\    \\        /:::/|::|   |            /:::/__\\:::\\    \\    \n   /::::\\   \\:::\\    \\      /::::\\   \\:::\\    \\      /:::/ |::|   |           /:::/    \\:::\\    \\      /:::/ |::|   |           /::::\\   \\:::\\    \\   \n  /::::::\\   \\:::\\    \\    /::::::\\   \\:::\\    \\    /:::/  |::|   | _____    /:::/    / \\:::\\    \\    /:::/  |::|___|______    /::::::\\   \\:::\\    \\  \n /:::/\\:::\\   \\:::\\____\\  /:::/\\:::\\   \\:::\\    \\  /:::/   |::|   |/\\    \\  /:::/    /   \\:::\\ ___\\  /:::/   |::::::::\\    \\  /:::/\\:::\\   \\:::\\    \\ \n/:::/  \\:::\\   \\:::|    |/:::/  \\:::\\   \\:::\\____\\/:: /    |::|   /::\\____\\/:::/____/     \\:::|    |/:::/    |:::::::::\\____\\/:::/__\\:::\\   \\:::\\____\\\n\\::/   |::::\\  /:::|____|\\::/    \\:::\\  /:::/    /\\::/    /|::|  /:::/    /\\:::\\    \\     /:::|____|\\::/    / ~~~~~/:::/    /\\:::\\   \\:::\\   \\::/    /\n \\/____|:::::\\/:::/    /  \\/____/ \\:::\\/:::/    /  \\/____/ |::| /:::/    /  \\:::\\    \\   /:::/    /  \\/____/      /:::/    /  \\:::\\   \\:::\\   \\/____/ \n       |:::::::::/    /            \\::::::/    /           |::|/:::/    /    \\:::\\    \\ /:::/    /               /:::/    /    \\:::\\   \\:::\\    \\     \n       |::|\\::::/    /              \\::::/    /            |::::::/    /      \\:::\\    /:::/    /               /:::/    /      \\:::\\   \\:::\\____\\    \n       |::| \\::/____/               /:::/    /             |:::::/    /        \\:::\\  /:::/    /               /:::/    /        \\:::\\   \\::/    /    \n       |::|  ~|                    /:::/    /              |::::/    /          \\:::\\/:::/    /               /:::/    /          \\:::\\   \\/____/     \n       |::|   |                   /:::/    /               /:::/    /            \\::::::/    /               /:::/    /            \\:::\\    \\         \n       \\::|   |                  /:::/    /               /:::/    /              \\::::/    /               /:::/    /              \\:::\\____\\        \n        \\:|   |                  \\::/    /                \\::/    /                \\::/____/                \\::/    /                \\::/    /        \n         \\|___|                   \\/____/                  \\/____/                  ~~                       \\/____/                  \\/____/         \n                                                                                                                                                      \n    ");
+	};
+
+	;
 
 /***/ }
 /******/ ]);

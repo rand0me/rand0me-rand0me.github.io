@@ -1,5 +1,8 @@
 module.exports = {
-    entry: './src/app.es6',
+    entry: [
+//      'babel-polyfill',
+        './src/app.es6'
+    ],
     output: {
         path: './build',
         filename: 'app.bundle.js'
@@ -13,5 +16,8 @@ module.exports = {
             test: /\.scss$/,
             loaders: ['style', 'css', 'sass']
         }]
+    },
+    resolve: {
+        extensions: ['', '.es6', '.scss']
     }
 };
