@@ -9,6 +9,9 @@ module.exports = {
             test: /\.es6$/,
             exclude: /node_modules/,
             loader: 'babel-loader'
+        },{
+            test: /\.scss$/,
+            loaders: ['style', 'css', 'sass']
         }]
     }
 };
