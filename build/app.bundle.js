@@ -98,10 +98,10 @@
 
 	exports = module.exports = __webpack_require__(4)();
 	// imports
-
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);", ""]);
 
 	// module
-	exports.push([module.id, "body {\n  background: black;\n  color: tomato; }\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Bowlby One SC', sans-serif;\n  background: black;\n  color: tomato; }\n", ""]);
 
 	// exports
 
