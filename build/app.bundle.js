@@ -101,7 +101,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: lavender; }\n", ""]);
+	exports.push([module.id, "body {\n  background: black;\n  color: tomato; }\n", ""]);
 
 	// exports
 
