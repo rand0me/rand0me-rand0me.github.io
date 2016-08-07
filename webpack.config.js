@@ -32,11 +32,10 @@ var config = {
     }
 };
 
-/*
 if (!process.env.DEBUG) {
-    config.module.loaders.push({
+    config.module.loaders.unshift({
         loader: 'uglify'
     });
 }
-*/
+
 module.exports = config;
