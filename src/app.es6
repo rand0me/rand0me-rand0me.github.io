@@ -1,7 +1,9 @@
 import './styles/app';
 import motd from './app/motd';
+import THREE from 'three';
 
 let body = document.querySelector('body');
 
 motd();
-body.html = '<h1>Test</h1>';
+console.log('Lal');
+console.log('TRALL')

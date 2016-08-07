@@ -2,10 +2,13 @@
   "name": "rand0me.github.io",
   "version": "1.0.0",
   "description": "The rand0me.github.io Github Pages Site",
-  "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build": "webpack"
+    "build": "npm run webpack",
+    "watch": "concurrently \"npm run webpack-watch\" \"npm run bs\"",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch",
+    "bs": "browser-sync start --server --files build/*"
   },
   "repository": {
     "type": "git",
@@ -16,16 +19,21 @@
   "bugs": {
     "url": "https://github.com/rand0me/rand0me.github.io/issues"
   },
-  "homepage": "https://github.com/rand0me/rand0me.github.io#readme",
+  "homepage": "https://rand0me.github.io/",
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.14.0",
+    "concurrently": "^2.2.0",
     "css-loader": "^0.23.1",
     "node-sass": "^3.8.0",
     "sass-loader": "^3.2.1",
+    "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "uglify-loader": "^1.3.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "babel": {
     "presets": [
