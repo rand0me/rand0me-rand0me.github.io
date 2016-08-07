@@ -1,6 +1,6 @@
 {
   "name": "rand0me.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The rand0me.github.io Github Pages Site",
   "scripts": {
     "test": "mocha",
