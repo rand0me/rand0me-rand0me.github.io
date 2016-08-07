@@ -68,8 +68,6 @@
 	var body = document.querySelector('body');
 
 	(0, _motd2.default)();
-	console.log('Lal');
-	console.log('TRALL');
 
 /***/ },
 /* 2 */
@@ -106,7 +104,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);", ""]);
 
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Bowlby One SC', sans-serif;\n  background: black;\n  color: tomato; }\n", ""]);
+	exports.push([module.id, "body {\n  font-family: sans-serif;\n  background: black;\n  color: tomato;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Bowlby One SC', sans-serif; }\n\n.header {\n  width: 100%;\n  text-align: center; }\n\n.sound-track {\n  align-self: center;\n  height: 150px;\n  min-width: 320px;\n  max-width: 600px;\n  width: 100%; }\n", ""]);
 
 	// exports
 

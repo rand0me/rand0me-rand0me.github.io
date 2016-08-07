@@ -5,5 +5,3 @@ import THREE from 'three';
 let body = document.querySelector('body');
 
 motd();
-console.log('Lal');
-console.log('TRALL')

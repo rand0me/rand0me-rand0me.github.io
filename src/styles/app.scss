@@ -1,7 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
 
 body {
-  font-family: 'Bowlby One SC', sans-serif;
-  background: black;
-  color: tomato;
+    font-family: sans-serif;
+    background: black;
+    color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: 'Bowlby One SC', sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.sound-track {
+    align-self: center;
+    height: 150px;
+    min-width: 320px;
+    max-width: 600px;
+    width: 100%;
 }
