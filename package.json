@@ -5,7 +5,7 @@
   "scripts": {
     "test": "mocha",
     "build": "npm run webpack",
-    "watch": "concurrently \"npm run webpack-watch\" \"npm run bs\"",
+    "watch": "DEBUG=true concurrently \"npm run webpack-watch\" \"npm run bs\"",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch",
     "bs": "browser-sync start --server --files [ build/app.bundle.js, index.html ]"
