@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rand0me.github.io by rand0me</title>
+        <meta name="description" content="rand0me">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div class="loader"></div>
+        <style>
+        body, html {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: black url(background.jpg);
+            font-size: 16px;
+            filter: blur(.1em) brightness(70%);
+            transition: 1s linear;
+        }
+        .loader {
+            position: relative;
+            background-color: #F8E71C;
+            width: 2em; height: 2em;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        body:hover {
+            filter:  blur(.05em) brightness(200%) contrast(150%);
+        }
+        .loader:after, .loader:before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+        }
+        .loader:after {
+            left: -2em; top: -2em;
+            width: .5em; height: .5em;
+            background-color: #C7C2A6;
+            transform-origin: 3em 3em;
+            animation: axis 2s linear infinite;
+        }
+        .loader:before {
+            left: -4em; top: -4em;
+            width: 1em; height: 1em;
+            background-color: hsl(210, 50%, 50%);
+            transform-origin: 5em 5em;
+            animation: axis 4s linear infinite;
+        }
+
+        @keyframes axis {
+            0% { transform: rotateZ(0deg) translate3d(0,0,0); }
+            100% { transform: rotateZ(360deg) translate3d(0,0,0); }
+        }
+        </style>
+    </body>
+</html>
