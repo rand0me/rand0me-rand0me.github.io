@@ -451,11 +451,23 @@ Router.Link = Link;
 
 /***/ }),
 
+/***/ "0U3q":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"hero":"hero__31Obu","first":"first__1TEGv","second":"second__Y-0B7","slidein":"slidein__1ZPf3"};
+
+/***/ }),
+
 /***/ "JkW7":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+// EXTERNAL MODULE: ../node_modules/typeface-montserrat/index.css
+var typeface_montserrat = __webpack_require__("lpeR");
+var typeface_montserrat_default = /*#__PURE__*/__webpack_require__.n(typeface_montserrat);
 
 // EXTERNAL MODULE: ./style/index.css
 var style = __webpack_require__("rq4c");
@@ -472,50 +484,42 @@ var preact_router_es = __webpack_require__("/QC5");
 var match = __webpack_require__("sw5u");
 var match_default = /*#__PURE__*/__webpack_require__.n(match);
 
-// EXTERNAL MODULE: ./components/header/style.css
-var header_style = __webpack_require__("u3et");
-var header_style_default = /*#__PURE__*/__webpack_require__.n(header_style);
+// EXTERNAL MODULE: ./components/hero/style.css
+var hero_style = __webpack_require__("0U3q");
+var hero_style_default = /*#__PURE__*/__webpack_require__.n(hero_style);
 
-// CONCATENATED MODULE: ./components/header/index.js
-
-
+// CONCATENATED MODULE: ./components/hero/index.js
 
 
 
-var header__ref = Object(preact_min["h"])(
-	'h1',
+
+
+var hero__ref = Object(preact_min["h"])(
+	'b',
 	null,
-	'Preact App'
+	'rand0me'
 );
 
-var header_Header = function Header() {
+var hero_Hero = function Hero() {
 	return Object(preact_min["h"])(
-		'header',
-		{ 'class': header_style_default.a.header },
-		header__ref,
+		'section',
+		{ 'class': hero_style_default.a.hero },
 		Object(preact_min["h"])(
-			'nav',
-			null,
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/' },
-				'Home'
-			),
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/profile' },
-				'Me'
-			),
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/profile/john' },
-				'John'
-			)
+			'p',
+			{ 'class': hero_style_default.a.first },
+			'Hi there!'
+		),
+		Object(preact_min["h"])(
+			'p',
+			{ 'class': hero_style_default.a.second },
+			'I\'m ',
+			hero__ref,
+			' ^_^'
 		)
 	);
 };
 
-/* harmony default export */ var header = (header_Header);
+/* harmony default export */ var hero = (hero_Hero);
 // EXTERNAL MODULE: ./routes/home/style.css
 var home_style = __webpack_require__("ZAL5");
 var home_style_default = /*#__PURE__*/__webpack_require__.n(home_style);
@@ -669,13 +673,7 @@ function app__inherits(subClass, superClass) { if (typeof superClass !== "functi
 
 
 
-var app__ref = Object(preact_min["h"])(header, null);
-
-var app__ref2 = Object(preact_min["h"])(home, { path: '/' });
-
-var _ref3 = Object(preact_min["h"])(profile_Profile, { path: '/profile/', user: 'me' });
-
-var _ref4 = Object(preact_min["h"])(profile_Profile, { path: '/profile/:user' });
+var app__ref = Object(preact_min["h"])(hero, null);
 
 var app_App = function (_Component) {
 	app__inherits(App, _Component);
@@ -704,14 +702,7 @@ var app_App = function (_Component) {
 		return Object(preact_min["h"])(
 			'div',
 			{ id: 'app' },
-			app__ref,
-			Object(preact_min["h"])(
-				preact_router_es["Router"],
-				{ onChange: this.handleRoute },
-				app__ref2,
-				_ref3,
-				_ref4
-			)
+			app__ref
 		);
 	};
 
@@ -720,6 +711,7 @@ var app_App = function (_Component) {
 
 
 // CONCATENATED MODULE: ./index.js
+
 
 
 
@@ -947,6 +939,13 @@ module.exports = {"home":"home__MseGd"};
 
 /***/ }),
 
+/***/ "lpeR":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "rq4c":
 /***/ (function(module, exports) {
 
@@ -1058,14 +1057,6 @@ exports.Link = Link;
 exports.default = Match;
 
 Match.Link = Link;
-
-/***/ }),
-
-/***/ "u3et":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"header":"header__3QGkI","active":"active__3gItZ"};
 
 /***/ })
 
